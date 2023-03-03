@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:grocery_shopping_app_ui/pages/cart_page.dart';
 import 'package:grocery_shopping_app_ui/pages/home_page.dart';
+import 'package:grocery_shopping_app_ui/pages/item_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +31,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomePage(),
+        "ItemPage": (context) => ItemPage(),
+        "CartPage": (context) => CartPage(),
       },
     );
   }
