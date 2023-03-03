@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_shopping_app_ui/widgets/cart_bottom_bar.dart';
+import 'package:grocery_shopping_app_ui/widgets/cart_item_samples.dart';
 
 class CartPage extends StatefulWidget {
   const CartPage({Key? key}) : super(key: key);
@@ -68,22 +70,27 @@ class _CartPageState extends State<CartPage> {
             child: Column(
               children: [
                 CheckboxListTile(
-                    activeColor: Color(0xFFFF8608),
-                    title: Text(
-                      "Select all items",
-                      style: TextStyle(fontSize: 18),
-                    ),
-                    value: checkedValue,
-                    onChanged: (newValue) {
-                      setState(() {
-                        checkedValue = newValue!;
-                      });
-                    }),
+                  activeColor: Color(0xFFFF8608),
+                  title: Text(
+                    "Select all items",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                  value: checkedValue,
+                  onChanged: (newValue) {
+                    setState(() {
+                      checkedValue = newValue!;
+                    });
+                  },
+                  controlAffinity: ListTileControlAffinity.leading,
+                ),
+                Divider(height: 30, thickness: 1),
+                CartItemSamples(),
               ],
             ),
           ),
         ],
       ),
+      bottomNavigationBar: CartBottomBar(),
     );
   }
 }
