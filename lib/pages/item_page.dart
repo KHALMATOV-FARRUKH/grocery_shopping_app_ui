@@ -10,14 +10,14 @@ class ItemPage extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            color: Color.fromARGB(255, 255, 230, 177),
+            color: const Color.fromARGB(255, 255, 230, 177),
             width: double.infinity,
             height: 350,
-            padding: EdgeInsets.symmetric(vertical: 15),
+            padding: const EdgeInsets.symmetric(vertical: 15),
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -25,13 +25,13 @@ class ItemPage extends StatelessWidget {
                         onTap: () {
                           Navigator.pop(context);
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.arrow_back,
                           size: 28,
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.all(8),
+                        padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
@@ -43,7 +43,7 @@ class ItemPage extends StatelessWidget {
                             ),
                           ],
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.favorite,
                           size: 30,
                           color: Color(0xFFFF8608),
@@ -61,10 +61,10 @@ class ItemPage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           Container(
-            padding: EdgeInsets.all(15),
-            margin: EdgeInsets.symmetric(horizontal: 2),
+            padding: const EdgeInsets.all(15),
+            margin: const EdgeInsets.symmetric(horizontal: 2),
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
@@ -78,7 +78,7 @@ class ItemPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Item Name",
                   style: TextStyle(
                     fontSize: 20,
@@ -86,7 +86,7 @@ class ItemPage extends StatelessWidget {
                   ),
                 ),
                 Column(
-                  children: [
+                  children: const [
                     Text(
                       "\$50",
                       style: TextStyle(
@@ -105,10 +105,10 @@ class ItemPage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 8),
-            margin: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+            margin: const EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(color: Colors.white, boxShadow: [
               BoxShadow(
                 color: Colors.grey.withOpacity(0.3),
@@ -119,7 +119,7 @@ class ItemPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Text(
                   "Product Details",
                   style: TextStyle(
@@ -141,19 +141,19 @@ class ItemPage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
                   "Only For You",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -162,10 +162,10 @@ class ItemPage extends StatelessWidget {
                       Container(
                         height: 90,
                         width: 90,
-                        padding: EdgeInsets.all(5),
-                        margin: EdgeInsets.only(top: 8, bottom: 8, left: 20),
+                        padding: const EdgeInsets.all(5),
+                        margin: const EdgeInsets.only(top: 8, bottom: 8, left: 20),
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 255, 230, 177),
+                          color: const Color.fromARGB(255, 255, 230, 177),
                           borderRadius: BorderRadius.circular(10),
                           boxShadow: [
                             BoxShadow(
@@ -187,7 +187,7 @@ class ItemPage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: ItemBottomBar(),
+      bottomNavigationBar: const ItemBottomBar(),
     );
   }
 }

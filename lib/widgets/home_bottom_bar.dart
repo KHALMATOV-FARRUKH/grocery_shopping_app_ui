@@ -8,15 +8,15 @@ class HomeBottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 80,
-      padding: EdgeInsets.symmetric(horizontal: 25, vertical: 12),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 12),
+      decoration: const BoxDecoration(
         color: Colors.white,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
-            children: [
+            children: const [
               Icon(
                 Icons.home,
                 color: Color(0xFFF7CA0F),
@@ -33,7 +33,7 @@ class HomeBottomBar extends StatelessWidget {
             ],
           ),
           Column(
-            children: [
+            children: const [
               Icon(
                 Icons.search,
                 color: Color(0xFFF7CA0F),
@@ -50,11 +50,11 @@ class HomeBottomBar extends StatelessWidget {
             ],
           ),
           InkWell(
-            onTap: (){
+            onTap: () {
               Navigator.pushNamed(context, "CartPage");
             },
             child: Column(
-              children: [
+              children: const [
                 Icon(
                   CupertinoIcons.cart,
                   color: Color(0xFFF7CA0F),
@@ -72,7 +72,7 @@ class HomeBottomBar extends StatelessWidget {
             ),
           ),
           Column(
-            children: [
+            children: const [
               Icon(
                 Icons.person,
                 color: Color(0xFFF7CA0F),

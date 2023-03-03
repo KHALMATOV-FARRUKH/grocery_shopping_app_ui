@@ -25,8 +25,8 @@ class HomePage extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           Container(
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(color: Colors.white, boxShadow: [
               BoxShadow(
                 color: Colors.grey.withOpacity(0.3),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
               children: [
                 for(int i=1; i<9; i++)
                 Container(
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 255, 230, 177),
                     borderRadius: BorderRadius.circular(10),
@@ -61,10 +61,10 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-          HomePagePosts(),
+          const HomePagePosts(),
         ],
       ),
-      bottomNavigationBar: HomeBottomBar(),
+      bottomNavigationBar: const HomeBottomBar(),
     );
   }
 }

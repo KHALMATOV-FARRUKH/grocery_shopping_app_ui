@@ -8,8 +8,8 @@ class ItemBottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 80,
-      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+      decoration: const BoxDecoration(
         color: Colors.white,
       ),
       child: Row(
@@ -22,10 +22,10 @@ class ItemBottomBar extends StatelessWidget {
               width: 80,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Color(0xFFF7CA0F),
+                color: const Color(0xFFF7CA0F),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Icon(
+              child: const Icon(
                 CupertinoIcons.cart_fill,
                 color: Colors.white,
                 size: 35,
@@ -39,10 +39,10 @@ class ItemBottomBar extends StatelessWidget {
               width: 220,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Color(0xFFF7CA0F),
+                color: const Color(0xFFF7CA0F),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Text(
+              child: const Text(
                 "Buy Now",
                 style: TextStyle(
                   color: Colors.white,

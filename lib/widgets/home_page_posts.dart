@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePagePosts extends StatelessWidget {
@@ -8,8 +7,8 @@ class HomePagePosts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.all(15),
-      margin: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(15),
+      margin: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -24,7 +23,7 @@ class HomePagePosts extends StatelessWidget {
         children: [
           Container(
             alignment: Alignment.centerLeft,
-            child: Text(
+            child: const Text(
               "Flash Sale",
               style: TextStyle(
                 fontSize: 20,
@@ -32,10 +31,10 @@ class HomePagePosts extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           GridView.count(
             crossAxisCount: 2,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             childAspectRatio: 0.7,
             crossAxisSpacing: 15,
             mainAxisSpacing: 15,
@@ -43,7 +42,7 @@ class HomePagePosts extends StatelessWidget {
             children: [
               for (int i = 1; i < 9; i++)
                 Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),

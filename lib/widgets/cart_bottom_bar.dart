@@ -8,9 +8,9 @@ class CartBottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 130,
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
-        color: Color(0xFFF5F9FD),
+        color: const Color(0xFFF5F9FD),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.2),
@@ -22,7 +22,7 @@ class CartBottomBar extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.only(top: 10),
             child: Row(
               children: const [
                 Icon(
@@ -40,7 +40,7 @@ class CartBottomBar extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             height: 25,
             thickness: 1,
           ),
@@ -74,9 +74,9 @@ class CartBottomBar extends StatelessWidget {
                   Navigator.pushNamed(context, "OrderPage");
                 },
                 child: Container(
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                  padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
                   decoration: BoxDecoration(
-                    color: Color(0xFFFF8608),
+                    color: const Color(0xFFFF8608),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const Text(

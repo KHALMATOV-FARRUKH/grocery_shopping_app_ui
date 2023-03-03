@@ -27,14 +27,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xFFF7F5F8),
+        scaffoldBackgroundColor: const Color(0xFFF7F5F8),
       ),
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => HomePage(),
-        "ItemPage": (context) => ItemPage(),
-        "CartPage": (context) => CartPage(),
-        "OrderPage": (context) => OrderPage(),
+        "/": (context) => const HomePage(),
+        "ItemPage": (context) => const ItemPage(),
+        "CartPage": (context) => const CartPage(),
+        "OrderPage": (context) => const OrderPage(),
       },
     );
   }

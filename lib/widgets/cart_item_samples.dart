@@ -22,7 +22,7 @@ class _CartItemSamplesState extends State<CartItemSamples> {
                 Row(
                   children: [
                     Checkbox(
-                      activeColor: Color(0xFFFF8608),
+                      activeColor: const Color(0xFFFF8608),
                       value: checkedValue,
                       onChanged: (newValue) {
                         setState(() {
@@ -150,14 +150,14 @@ class _CartItemSamplesState extends State<CartItemSamples> {
                     ),
                   ],
                 ),
-                SizedBox(height: 15),
-                Divider(thickness: 1),
+                const SizedBox(height: 15),
+                const Divider(thickness: 1),
               ],
             ),
           ),
         Container(
-          margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-          padding: EdgeInsets.all(15),
+          margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+          padding: const EdgeInsets.all(15),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -173,7 +173,7 @@ class _CartItemSamplesState extends State<CartItemSamples> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text(
                     "Sub-Total",
                     style: TextStyle(
@@ -192,13 +192,13 @@ class _CartItemSamplesState extends State<CartItemSamples> {
                   ),
                 ],
               ),
-              Divider(
+              const Divider(
                 height: 20,
                 thickness: 1,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text(
                     "Delivery Fee",
                     style: TextStyle(
@@ -217,13 +217,13 @@ class _CartItemSamplesState extends State<CartItemSamples> {
                   ),
                 ],
               ),
-              Divider(
+              const Divider(
                 height: 20,
                 thickness: 1,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text(
                     "Discount",
                     style: TextStyle(

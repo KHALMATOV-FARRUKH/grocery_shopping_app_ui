@@ -18,20 +18,20 @@ class _CartPageState extends State<CartPage> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
             child: Row(
               children: [
                 InkWell(
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back,
                     size: 28,
                   ),
                 ),
-                SizedBox(width: 15),
-                Text(
+                const SizedBox(width: 15),
+                const Text(
                   "My Cart",
                   style: TextStyle(
                     fontSize: 22,
@@ -39,11 +39,11 @@ class _CartPageState extends State<CartPage> {
                     color: Color(0xFFFF8608),
                   ),
                 ),
-                Spacer(
+                const Spacer(
                   flex: 2,
                 ),
                 Container(
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
@@ -55,7 +55,7 @@ class _CartPageState extends State<CartPage> {
                       ),
                     ],
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.notifications,
                     size: 30,
                     color: Color(0xFFFF8608),
@@ -65,13 +65,13 @@ class _CartPageState extends State<CartPage> {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.only(top: 10),
             color: Colors.white,
             child: Column(
               children: [
                 CheckboxListTile(
-                  activeColor: Color(0xFFFF8608),
-                  title: Text(
+                  activeColor: const Color(0xFFFF8608),
+                  title: const Text(
                     "Select all items",
                     style: TextStyle(fontSize: 18),
                   ),
@@ -83,14 +83,14 @@ class _CartPageState extends State<CartPage> {
                   },
                   controlAffinity: ListTileControlAffinity.leading,
                 ),
-                Divider(height: 30, thickness: 1),
-                CartItemSamples(),
+                const Divider(height: 30, thickness: 1),
+                const CartItemSamples(),
               ],
             ),
           ),
         ],
       ),
-      bottomNavigationBar: CartBottomBar(),
+      bottomNavigationBar: const CartBottomBar(),
     );
   }
 }
